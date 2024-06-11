@@ -1,0 +1,59 @@
+{
+  "id-mapping": {
+    "boxes": [
+      [{"id":"11111111111VV88fm","unit-id":0},2],
+      [{"id":"11111111111bYaC4C","unit-id":0},3],
+      [{"id":"AbfxnbprnjZSGvmAan2Npj","unit-id":0},4],
+      [{"id":"12JVouYGZUEVoiygDxV3u4","unit-id":0},7],
+      [{"id":"1114VuAvHNgLD5Rkx8Vpm","unit-id":0},10]
+    ],
+    "inst-boxes": [
+      [{"id":"4iHQss7YYt9ujEVYxCahir","unit-id":0},11],
+      [{"id":"GWaf2mVpMPcgSvmhcVJ9dq","unit-id":0},12]
+    ],
+    "nets": [
+    ],
+    "ports": [
+      ["1111111111123Xnz5S",0],
+      ["11111111111294J2Uo",1],
+      ["11111111111qTUSSS",5],
+      ["11111111111gV123y",6],
+      ["1111111111112qeb8R",8],
+      ["111111111117mct3V",9]
+    ]
+  },
+  "design": {
+    "input": {
+      "paper-size": {
+        "x": 200,
+        "y": 125
+      },
+      "label-style": {
+        "type": "monospace-label-style",
+        "height-in-grid-units": 0.8,
+        "char-width-relative-to-height": 0.6
+      },
+      "boxes": [
+        {"id":2,"sw":{"x":-1,"y":-2},"ne":{"x":1,"y":2},"ports":[{"id":0,"pt":{"x":0,"y":2},"dir":"Up","tag":"AnyTag"},{"id":1,"pt":{"x":0,"y":-2},"dir":"Down","tag":"AnyTag"}],"orientation":{"type":"any-rotation"}},
+        {"id":3,"sw":{"x":-3,"y":-3},"ne":{"x":3,"y":3},"ports":[],"orientation":{"type":"any-rotation"}},
+        {"id":4,"sw":{"x":-3,"y":-3},"ne":{"x":3,"y":3},"ports":[],"orientation":{"type":"any-rotation"}},
+        {"id":7,"sw":{"x":-1,"y":-2},"ne":{"x":1,"y":2},"ports":[{"id":5,"pt":{"x":0,"y":2},"dir":"Up","tag":"AnyTag"},{"id":6,"pt":{"x":0,"y":-2},"dir":"Down","tag":"AnyTag"}],"orientation":{"type":"any-rotation"}},
+        {"id":10,"sw":{"x":-4,"y":-1},"ne":{"x":4,"y":1},"ports":[{"id":8,"pt":{"x":-4,"y":0},"dir":"Left","tag":"AnyTag"},{"id":9,"pt":{"x":4,"y":0},"dir":"Right","tag":"AnyTag"}],"orientation":{"type":"any-rotation"}}
+      ],
+      "insts": [
+        {"id":11,"box":7,"group":null},
+        {"id":12,"box":4,"group":"version-label"}
+      ],
+      "nets": [
+      ],
+      "shorts": [
+      ],
+      "schematic-group-order": [
+      ]
+    },
+    "sheets": [
+      {"id":19,"title":null,"groups":[{"id":13,"groups":["version-label"],"border":{"sw":{"x":89,"y":57},"ne":{"x":99,"y":67}},"ports":[],"insts":[{"inst":12,"pose":{"center":{"x":94,"y":62},"angle":0,"flip-x?":false}}],"nets":[],"children":[]},{"id":14,"groups":[null],"border":{"sw":{"x":105,"y":57},"ne":{"x":111,"y":65}},"ports":[],"insts":[{"inst":11,"pose":{"center":{"x":108,"y":61},"angle":0,"flip-x?":false}}],"nets":[],"children":[]}]}
+    ],
+    "hierarchical-diagram": null
+  }
+}

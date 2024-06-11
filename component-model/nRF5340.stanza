@@ -1,0 +1,185 @@
+; When renaming the stanza package name below, also rename it in the folder stanza.proj
+; See docs.jitx.com for help
+#use-added-syntax(jitx)
+defpackage components/nRF5340:
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+  import ocdb/utils/defaults
+  import ocdb/utils/box-symbol
+  import ocdb/utils/bundles
+
+
+  import jsl/design/settings
+  import jsl/landpatterns/packages
+  import jsl/landpatterns/pad-island
+  import jsl/landpatterns/numbering
+  import jsl/landpatterns/BGA
+  import jsl/examples/landpatterns/board
+
+public pcb-component component :
+  name = "nRF5340"
+  description = "PART, DESCRIPTION, DETAILED"
+  mpn = "nRF5340"
+  manufacturer = "MANUFACTURER NAME"
+  reference-prefix = "LETTER"
+
+  pin-properties :
+    [pin:Ref      | pads:Ref ... | side:Dir | bank:Ref]
+    [ ANT | D[1] | Right | rf ]
+    [ AVSS[0] | G[5] | Left | power ]
+    [ AVSS[1] | K[11] | Left | power ]
+    [ AVSS[2] | K[6] | Left | power ]
+    [ D-| A[11] | Left | usb ]
+    [ D+ | A[12] | Left | usb ]
+    [ DCC | B[6] | Right | power ]
+    [ DCCD | A[9] | Right | power ]
+    [ DCCH | D[11] | Right | power ]
+    [ DECA | B[8] | Right | power ]
+    [ DECD | A[7] | Right | power ]
+    [ DECN | B[5] | Right | power ]
+    [ DECR | B[4] | Right | power ]
+    [ DECRF | B[1] | Right | power ]
+    [ DECUSB | C[11] | Right | power ]
+    [ nRESET | G[2] | Left | reset ]
+    [ P0[00] | F[11] | Right | gpio-0 ]
+    [ P0[01] | F[12] | Right | gpio-0 ]
+    [ P0[02] | G[11] | Right | gpio-0 ]
+    [ P0[03] | H[12] | Right | gpio-0 ]
+    [ P0[04] | G[10] | Right | gpio-0 ]
+    [ P0[05] | F[10] | Right | gpio-0 ]
+    [ P0[06] | H[10] | Right | gpio-0 ]
+    [ P0[07] | J[10] | Right | gpio-0 ]
+    [ P0[08] | L[12] | Right | gpio-0 ]
+    [ P0[09] | J[9] | Right | gpio-0 ]
+    [ P0[10] | J[8] | Right | gpio-0 ]
+    [ P0[11] | J[7] | Right | gpio-0 ]
+    [ P0[12] | J[6] | Right | gpio-0 ]
+    [ P0[13] | K[10] | Right | gpio-0 ]
+    [ P0[14] | K[9] | Right | gpio-0 ]
+    [ P0[15] | L[9] | Right | gpio-0 ]
+    [ P0[16] | K[8] | Right | gpio-0 ]
+    [ P0[17] | L[7] | Right | gpio-0 ]
+    [ P0[18] | K[7] | Right | gpio-0 ]
+    [ P0[19] | J[5] | Right | gpio-0 ]
+    [ P0[20] | K[5] | Right | gpio-0 ]
+    [ P0[21] | J[4] | Right | gpio-0 ]
+    [ P0[22] | K[4] | Right | gpio-0 ]
+    [ P0[23] | H[3] | Right | gpio-0 ]
+    [ P0[24] | K[2] | Right | gpio-0 ]
+    [ P0[25] | L[1] | Right | gpio-0 ]
+    [ P0[26] | J[2] | Right | gpio-0 ]
+    [ P0[27] | H[1] | Right | gpio-0 ]
+    [ P0[28] | E[3] | Right | gpio-0 ]
+    [ P0[29] | E[2] | Right | gpio-0 ]
+    [ P0[30] | C[4] | Right | gpio-0 ]
+    [ P0[31] | C[5] | Right | gpio-0 ]
+    [ P1[00] | D[10] | Right | gpio ]
+    [ P1[01] | E[10] | Right | gpio ]
+    [ P1[02] | J[11] | Right | gpio ]
+    [ P1[03] | K[12] | Right | gpio ]
+    [ P1[04] | K[3] | Right | gpio ]
+    [ P1[05] | L[3] | Right | gpio ]
+    [ P1[06] | J[3] | Right | gpio ]
+    [ P1[07] | G[3] | Right | gpio ]
+    [ P1[08] | F[3] | Right | gpio ]
+    [ P1[09] | H[2] | Right | gpio ]
+    [ P1[10] | E[4] | Right | gpio ]
+    [ P1[11] | C[6] | Right | gpio ]
+    [ P1[12] | C[7] | Right | gpio ]
+    [ P1[13] | C[8] | Right | gpio ]
+    [ P1[14] | C[9] | Right | gpio ]
+    [ P1[15] | C[10] | Right | gpio ]
+    [ SWDCLK | F[2] | Left | debug ]
+    [ SWDIO | F[1] | Left | debug ]
+    [ VBUS | B[11] | Right | power ]
+    [ VDD[0] | A[3] | Right | power ]
+    [ VDD[1] | B[10] | Right | power ]
+    [ VDD[2] | B[7] | Right | power ]
+    [ VDD[3] | D[2] | Right | power ]
+    [ VDD[4] | E[11] | Right | power ]
+    [ VDD[5] | H[11] | Right | power ]
+    [ VDD[6] | K[1] | Right | power ]
+    [ VDD[7] | L[11] | Right | power ]
+    [ VDD[8] | L[5] | Right | power ]
+    [ VDDH | B[12] | Right | power ]
+    [ VSS[0] | A[5] | Left | power ]
+    [ VSS[1] | B[2] | Left | power ]
+    [ VSS[2] | B[9] | Left | power ]
+    [ VSS[3] | C[2] | Left | power ]
+    [ VSS[4] | D[12] | Left | power ]
+    [ VSS[5] | E[5] | Left | power ]
+    [ VSS[6] | E[6] | Left | power ]
+    [ VSS[7] | E[7] | Left | power ]
+    [ VSS[8] | E[8] | Left | power ]
+    [ VSS[9] | F[5] | Left | power ]
+    [ VSS[10] | F[6] | Left | power ]
+    [ VSS[11] | F[7] | Left | power ]
+    [ VSS[12] | F[8] | Left | power ]
+    [ VSS[13] | G[6] | Left | power ]
+    [ VSS[14] | G[7] | Left | power ]
+    [ VSS[15] | G[8] | Left | power ]
+    [ XC1 | A[1] | Left | analog_input ]
+    [ XC2 | A[2] | Left | analog_input ]
+
+  make-box-symbol()
+
+ ; This test is based on the TI, TPA6203A1GQVR
+  ; Datasheet:
+  ;  https://www.ti.com/lit/ds/symlink/tpa6203a1.pdf
+  ;
+  ; Drawing:
+  ;  https://www.ti.com/lit/ml/mpbg144c/mpbg144c.pdf
+  ;
+  ; NSMD
+  val rows = 11
+  val cols = 12
+  val grid = Grid-Numbering(rows, cols)
+
+  val missing-pads = ["A[4]", "A[6]", "A[8]", "A[10]", "B[3]", "C[1]", "C[3]", "C[12]", 
+                      "D[3]", "D[4]", "D[5]", "D[6]", "D[7]", "D[8]", "D[9]", "E[1]", "E[9]", "E[12]",
+                      "F[4]", "F[9]", "G[1]", "G[4]", "G[9]", "G[12]", 
+                      "H[4]", "H[5]", "H[6]", "H[7]", "H[8]", "H[9]",
+                      "J[1]", "J[12]", "L[2]", "L[4]", "L[6]", "L[8]", "L[10]"]
+
+  val missing = to-tuple $ for s in missing-pads seq:
+                      to-pad-island(grid, s)
+
+  val planner = Perimeter-Matrix-Planner(
+    ; Several pads are not present
+    inactive = missing,
+    pad-config = PadConfig-D(
+      copper-D-adj = ipc-bga-copper(
+        NonSolderMaskDefined,
+        density-level = DensityLevelC
+        ),
+      mask-D-adj = 0.0,
+    )
+  )
+
+  val body = PackageBody(
+    width = 4.390 +/- 0.047,
+    length = 3.994 +/- 0.047,
+    height = 0.294 +/- 0.028
+  )
+
+  val pkg = BGA(
+    num-leads = 95,
+    rows = rows,
+    columns = cols,
+    lead-diam = 0.18,
+    pitch = 0.35,
+    package-body = body,
+    lead-numbering = grid,
+    pad-planner = planner,
+    density-level = DensityLevelB
+  )
+
+
+  val lp = create-landpattern(pkg)
+  assign-landpattern(lp)
+
+; Visualize the symbol and landpattern in the VSCode visualizer.
+; Remove before use of the component in a design
+view(component)
