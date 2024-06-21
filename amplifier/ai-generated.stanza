@@ -1,0 +1,97 @@
+; ====================
+; A number of helpful functions to check your designs, export to CAD,
+; update your design in CAD, etc.
+; ====================
+#use-added-syntax(jitx)
+defpackage ai-generated :
+  import core
+  import jitx
+  import jitx/commands
+
+  import ocdb/utils/generic-components
+  import components
+
+; AI genereted code by Claude 3 Opus. Splitting out into modules for clarity, adding ports and such was done by a human.
+
+public pcb-module microphone :
+; Human additions ========
+  pin vdd
+  pin gnd
+  pin out
+; ========================
+  ; Microphone Bias Circuit:
+  ; - Let's choose a bias resistor of 2.2kΩ.
+  ; - Assuming negligible current draw from the op-amp, the mic bias will be very ; close to 2.5V.
+  ; Netlist: 
+  inst mic : electret-mic 
+  inst rbias : chip-resistor(2200.0) 
+  inst c1 : ceramic-cap(1.0e-6) ; Decoupling cap, assuming 1uF 
+  net (vdd rbias.p[1]) 
+  net AI-MIC-IN (rbias.p[2] mic.vdd c1.p[1] out) 
+  net (gnd mic.gnd c1.p[2])
+
+public pcb-module non-inverting-amplifier :
+  ; Human additions ========
+  pin vdd
+  pin gnd
+  pin in
+  pin out
+; ========================
+  ; Non-Inverting Amplifier:
+  ; - Let's set the gain to 10 (20dB).
+  ; - Choose R1 = 1kΩ, then R2 = 9kΩ
+  ; Netlist: 
+  inst amp : op-amp 
+  inst r1 : chip-resistor(1000.0) 
+  inst r2 : chip-resistor(9000.0) 
+  net (in r1.p[1]) 
+  net (r1.p[2] amp.v- r2.p[1]) 
+  net (amp.out r2.p[2] out)
+
+public pcb-module DABP-bandpass-filter :
+  ; Human additions ========
+  pin vdd
+  pin gnd
+  pin in
+  pin out
+; ========================
+
+  ; DABP Bandpass Filter:
+  ; - Cutoff frequencies: fl = 100Hz, fh = 20kHz
+  ; - Gain at center frequency: G0 = 10 (20dB)
+  ; - Quality factor: Let's choose Q = 1 for a fairly wide passband
+  ; - Center frequency: f0 = sqrt(fl * fh) ≈ 1.414kHz
+  ; - Let's choose C1 = C2 = 10nF
+  ; - R1 = R2 = 1 / (2 * pi * f0 * C1) ≈ 11.2kΩ, let's use 11kΩ
+  ; - R3 = R1 / (2 * Q * G0) ≈ 550Ω, let's use 560Ω
+  ; - R4 = 2 * Q * R1 / G0 ≈ 2.2kΩ
+
+  ; Netlist: 
+  inst op1 : op-amp 
+  inst op2 : op-amp 
+  inst r1 : chip-resistor(11000.0) 
+  inst r2 : chip-resistor(11000.0) 
+  inst r3 : chip-resistor(560.0) 
+  inst r4 : chip-resistor(2200.0) 
+  inst c1 : ceramic-cap(10.0e-9) 
+  inst c2 : ceramic-cap(10.0e-9) 
+  net AI-DABP-IN (in op1.v+ r1.p[1] c1.p[1]) 
+  net (op1.v- op2.out r1.p[2] c1.p[2] out) 
+  net (op1.out r3.p[1]) 
+  net (r3.p[2] op2.v- r2.p[1] c2.p[1]) 
+  net (op2.v+ r2.p[2] c2.p[2] r4.p[1]) 
+  net (r4.p[2] gnd)
+
+public pcb-module pre-amplifier :
+  inst mic : microphone
+  inst amp : non-inverting-amplifier
+  inst filter : DABP-bandpass-filter
+  net (mic.out amp.in)
+  net (amp.out filter.in)
+  net AI-MIC-OUT (filter.out)
+  net VDD (mic.vdd amp.vdd filter.vdd)
+  net GND (mic.gnd amp.gnd filter.gnd)
+
+  symbol(GND) = ocdb/utils/symbols/ground-sym
+  symbol(VDD) = ocdb/utils/symbols/supply-sym
+  

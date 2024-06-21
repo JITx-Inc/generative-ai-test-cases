@@ -1,0 +1,1825 @@
+{
+	"proj-name":	"jitx-design",
+	"headers":	[{
+			"field":	"status",
+			"name":	"Status",
+			"width":	10
+		}, {
+			"field":	"description",
+			"name":	"Description",
+			"width":	10
+		}, {
+			"field":	"insts",
+			"name":	"References",
+			"width":	10
+		}, {
+			"field":	"datasheet",
+			"name":	"Datasheet",
+			"width":	10
+		}, {
+			"field":	"manufacturer",
+			"name":	"Manufacturer",
+			"width":	10
+		}, {
+			"field":	"mpn",
+			"name":	"Part Number",
+			"width":	10
+		}, {
+			"field":	"_quantity",
+			"name":	"Quantity",
+			"width":	8
+		}, {
+			"field":	"price",
+			"name":	"Price",
+			"width":	8
+		}, {
+			"field":	"_preferred",
+			"name":	"Preferred",
+			"width":	8
+		}],
+	"new_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"CAP CER 1UF 16V X5R 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"c1"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	{
+							"filename":	"reference.stanza",
+							"line":	19,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"c1"
+							}
+						},
+						"ref":	"C1",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	28,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://global.kyocera.com/prdct/electro/product/pdf/cm_e.pdf",
+				"manufacturer":	"KYOCERA AVX",
+				"mpn":	"CM05X5R105K16AH",
+				"vendor":	"DigiKey",
+				"sku":	"CM05X5R105K16AH",
+				"price":	0.11,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	1e-06,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"10V 2.2uF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C7",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C6",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT155R61A225KE01-01.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GRT155R61A225KE01J",
+				"vendor":	"DigiKey",
+				"sku":	"GRT155R61A225KE01J",
+				"price":	0.27,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	2.2e-06,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 100K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"rid"
+							}
+						},
+						"ref":	"R13",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	727,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"rid"
+							}
+						},
+						"ref":	"R11",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	727,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"rid"
+							}
+						},
+						"ref":	"R10",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	727,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-FX-1003GLF",
+				"vendor":	"DigiKey",
+				"sku":	"CR0402-FX-1003GLF",
+				"price":	0.00179,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	100000,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 2.2K OHM 5% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"rbias"
+							}
+						},
+						"ref":	"R8",
+						"fileinfo":	{
+							"filename":	"reference.stanza",
+							"line":	18,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"r4"
+							}
+						},
+						"ref":	"R7",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	75,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"rbias"
+							}
+						},
+						"ref":	"R1",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	27,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-JW-222GLF",
+				"vendor":	"DigiKey",
+				"sku":	"CR0402-JW-222GLF",
+				"price":	0.1,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	2200,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RCC0402 100 49R9 1% ET7 E3",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"rout"
+							}
+						},
+						"ref":	"R12",
+						"fileinfo":	{
+							"filename":	"reference.stanza",
+							"line":	48,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.vishay.com/docs/20066/rcce3.pdf",
+				"manufacturer":	"VISHAY",
+				"mpn":	"RCC040249R9FKED",
+				"vendor":	"DigiKey",
+				"sku":	"RCC040249R9FKED",
+				"price":	0.01536,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	49.9,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"25V 10nF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C5",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"c2"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	77,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"c1"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	76,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2304140030_TDK-C1005X5R1E103K050BA_C2181963.pdf",
+				"manufacturer":	"TDK Corp",
+				"mpn":	"C1005X5R1E103K050BA",
+				"vendor":	"DigiKey",
+				"sku":	"C1005X5R1E103K050BA",
+				"price":	0.00735,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	1e-08,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thin Film Resistor ±1% 560Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"r3"
+							}
+						},
+						"ref":	"R6",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	74,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2210190330_YAGEO-RT0402FRE07560RL_C854367.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RT0402FRE07560RL",
+				"vendor":	"DigiKey",
+				"sku":	"RT0402FRE07560RL",
+				"price":	0.008,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	560,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±1% 11kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"r2"
+							}
+						},
+						"ref":	"R5",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	73,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"r1"
+							}
+						},
+						"ref":	"R4",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	72,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2201280500_YAGEO-AF0402FR-0711KL_C1883521.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"AF0402FR-0711KL",
+				"vendor":	"DigiKey",
+				"sku":	"AF0402FR-0711KL",
+				"price":	0.00754,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	11000,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RESA-AS 0402 1K 1% 63MW TC100",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"r1"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	45,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/crxxxxa-as.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402AFX-1001GAS",
+				"vendor":	"DigiKey",
+				"sku":	"CR0402AFX-1001GAS",
+				"price":	0.00478,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	1000,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES 75K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"rid"
+							}
+						},
+						"ref":	"R9",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	727,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.vishay.com/docs/28773/crcwce3.pdf",
+				"manufacturer":	"VISHAY",
+				"mpn":	"CRCW040275K0FKEDC",
+				"vendor":	"DigiKey",
+				"sku":	"CRCW040275K0FKEDC",
+				"price":	0.1,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	75000,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"8pA 1 10MHz 轨到轨 SC-70-5  Operational Amplifier ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"human"
+									},
+									"field":	{
+										"name":	"amp"
+									}
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"opa"
+							}
+						},
+						"ref":	"U6",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	26,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"ai"
+									},
+									"field":	{
+										"name":	"filter"
+									}
+								},
+								"field":	{
+									"name":	"op2"
+								}
+							},
+							"field":	{
+								"name":	"opa"
+							}
+						},
+						"ref":	"U4",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	26,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"ai"
+									},
+									"field":	{
+										"name":	"filter"
+									}
+								},
+								"field":	{
+									"name":	"op1"
+								}
+							},
+							"field":	{
+								"name":	"opa"
+							}
+						},
+						"ref":	"U3",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	26,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"ai"
+									},
+									"field":	{
+										"name":	"amp"
+									}
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"opa"
+							}
+						},
+						"ref":	"U2",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	26,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/1809051821_Texas-Instruments-OPA172IDCKR_C84622.pdf",
+				"manufacturer":	"Texas Instruments",
+				"mpn":	"OPA172IDCKR",
+				"vendor":	"DigiKey",
+				"sku":	"OPA172IDCKR",
+				"price":	1.54,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	" Plugin,D=4.5mm  Microphones ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"human"
+									},
+									"field":	{
+										"name":	"mic"
+									}
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"mic"
+							}
+						},
+						"ref":	"U5",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	15,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"ai"
+									},
+									"field":	{
+										"name":	"mic"
+									}
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"mic"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	15,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2001132232_INGHAi-GMI4522P-2C-62db_C233321.pdf",
+				"manufacturer":	"INGHAi",
+				"mpn":	"GMI4522P-2C-62db",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	4,
+					"name":	"Not Enough Stock"
+				},
+				"description":	"±1% 1/10W Thick Film Resistors 75V ±100ppm/℃ -55℃~+155℃ 9kΩ 0603 Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"r2"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	46,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2110261030_UNI-ROYAL-Uniroyal-Elec-0603WAF9001T5E_C407505.pdf",
+				"manufacturer":	"Uniroyal",
+				"mpn":	"0603WAF9001T5E",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"resistance":	9000,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}]
+	},
+	"metrics":	[{
+			"name":	"Line Items",
+			"value":	13
+		}, {
+			"name":	"Components",
+			"value":	26
+		}, {
+			"name":	"Cost",
+			"value":	"$7.39"
+		}],
+	"is_update":	false,
+	"old_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"CAP CER 1UF 16V X5R 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"c1"
+							}
+						},
+						"ref":	"C4",
+						"fileinfo":	{
+							"filename":	"reference.stanza",
+							"line":	19,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"c1"
+							}
+						},
+						"ref":	"C1",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	28,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://global.kyocera.com/prdct/electro/product/pdf/cm_e.pdf",
+				"manufacturer":	"KYOCERA AVX",
+				"mpn":	"CM05X5R105K16AH",
+				"vendor":	"DigiKey",
+				"sku":	"CM05X5R105K16AH",
+				"price":	0.11,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	1e-06,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"10V 2.2uF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C7",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C6",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT155R61A225KE01-01.pdf",
+				"manufacturer":	"MURATA",
+				"mpn":	"GRT155R61A225KE01J",
+				"vendor":	"DigiKey",
+				"sku":	"GRT155R61A225KE01J",
+				"price":	0.27,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	2.2e-06,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 100K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"rid"
+							}
+						},
+						"ref":	"R13",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	727,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"rid"
+							}
+						},
+						"ref":	"R11",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	727,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"rid"
+							}
+						},
+						"ref":	"R10",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	727,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-FX-1003GLF",
+				"vendor":	"DigiKey",
+				"sku":	"CR0402-FX-1003GLF",
+				"price":	0.00179,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	100000,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 2.2K OHM 5% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"rbias"
+							}
+						},
+						"ref":	"R8",
+						"fileinfo":	{
+							"filename":	"reference.stanza",
+							"line":	18,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"r4"
+							}
+						},
+						"ref":	"R7",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	75,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"rbias"
+							}
+						},
+						"ref":	"R1",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	27,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/CRxxxxx.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402-JW-222GLF",
+				"vendor":	"DigiKey",
+				"sku":	"CR0402-JW-222GLF",
+				"price":	0.1,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	2200,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RCC0402 100 49R9 1% ET7 E3",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"rout"
+							}
+						},
+						"ref":	"R12",
+						"fileinfo":	{
+							"filename":	"reference.stanza",
+							"line":	48,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.vishay.com/docs/20066/rcce3.pdf",
+				"manufacturer":	"VISHAY",
+				"mpn":	"RCC040249R9FKED",
+				"vendor":	"DigiKey",
+				"sku":	"RCC040249R9FKED",
+				"price":	0.01536,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	49.9,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"25V 10nF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C5",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"c2"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	77,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"c1"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	76,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2304140030_TDK-C1005X5R1E103K050BA_C2181963.pdf",
+				"manufacturer":	"TDK Corp",
+				"mpn":	"C1005X5R1E103K050BA",
+				"vendor":	"DigiKey",
+				"sku":	"C1005X5R1E103K050BA",
+				"price":	0.00735,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	1e-08,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thin Film Resistor ±1% 560Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"r3"
+							}
+						},
+						"ref":	"R6",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	74,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2210190330_YAGEO-RT0402FRE07560RL_C854367.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"RT0402FRE07560RL",
+				"vendor":	"DigiKey",
+				"sku":	"RT0402FRE07560RL",
+				"price":	0.008,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	560,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±1% 11kΩ 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"r2"
+							}
+						},
+						"ref":	"R5",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	73,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"filter"
+								}
+							},
+							"field":	{
+								"name":	"r1"
+							}
+						},
+						"ref":	"R4",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	72,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2201280500_YAGEO-AF0402FR-0711KL_C1883521.pdf",
+				"manufacturer":	"YAGEO",
+				"mpn":	"AF0402FR-0711KL",
+				"vendor":	"DigiKey",
+				"sku":	"AF0402FR-0711KL",
+				"price":	0.00754,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	11000,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RESA-AS 0402 1K 1% 63MW TC100",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"r1"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	45,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.bourns.com/docs/product-datasheets/crxxxxa-as.pdf",
+				"manufacturer":	"BOURNS",
+				"mpn":	"CR0402AFX-1001GAS",
+				"vendor":	"DigiKey",
+				"sku":	"CR0402AFX-1001GAS",
+				"price":	0.00478,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	1000,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES 75K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"human"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"rid"
+							}
+						},
+						"ref":	"R9",
+						"fileinfo":	{
+							"filename":	"/Users/duncan/.jitx/3.10.0/slm/ocdb/utils/generic-components.stanza",
+							"line":	727,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.vishay.com/docs/28773/crcwce3.pdf",
+				"manufacturer":	"VISHAY",
+				"mpn":	"CRCW040275K0FKEDC",
+				"vendor":	"DigiKey",
+				"sku":	"CRCW040275K0FKEDC",
+				"price":	0.1,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"_stock":	100,
+					"mounting":	"smd",
+					"resistance":	75000,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"8pA 1 10MHz 轨到轨 SC-70-5  Operational Amplifier ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"human"
+									},
+									"field":	{
+										"name":	"amp"
+									}
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"opa"
+							}
+						},
+						"ref":	"U6",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	26,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"ai"
+									},
+									"field":	{
+										"name":	"filter"
+									}
+								},
+								"field":	{
+									"name":	"op2"
+								}
+							},
+							"field":	{
+								"name":	"opa"
+							}
+						},
+						"ref":	"U4",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	26,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"ai"
+									},
+									"field":	{
+										"name":	"filter"
+									}
+								},
+								"field":	{
+									"name":	"op1"
+								}
+							},
+							"field":	{
+								"name":	"opa"
+							}
+						},
+						"ref":	"U3",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	26,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"ai"
+									},
+									"field":	{
+										"name":	"amp"
+									}
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"opa"
+							}
+						},
+						"ref":	"U2",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	26,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/1809051821_Texas-Instruments-OPA172IDCKR_C84622.pdf",
+				"manufacturer":	"Texas Instruments",
+				"mpn":	"OPA172IDCKR",
+				"vendor":	"DigiKey",
+				"sku":	"OPA172IDCKR",
+				"price":	1.54,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	" Plugin,D=4.5mm  Microphones ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"human"
+									},
+									"field":	{
+										"name":	"mic"
+									}
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"mic"
+							}
+						},
+						"ref":	"U5",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	15,
+							"column":	2
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"ref":	{
+										"name":	"ai"
+									},
+									"field":	{
+										"name":	"mic"
+									}
+								},
+								"field":	{
+									"name":	"mic"
+								}
+							},
+							"field":	{
+								"name":	"mic"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"components.stanza",
+							"line":	15,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2001132232_INGHAi-GMI4522P-2C-62db_C233321.pdf",
+				"manufacturer":	"INGHAi",
+				"mpn":	"GMI4522P-2C-62db",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	4,
+					"name":	"Not Enough Stock"
+				},
+				"description":	"±1% 1/10W Thick Film Resistors 75V ±100ppm/℃ -55℃~+155℃ 9kΩ 0603 Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"ai"
+								},
+								"field":	{
+									"name":	"amp"
+								}
+							},
+							"field":	{
+								"name":	"r2"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	{
+							"filename":	"ai-generated.stanza",
+							"line":	46,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2110261030_UNI-ROYAL-Uniroyal-Elec-0603WAF9001T5E_C407505.pdf",
+				"manufacturer":	"Uniroyal",
+				"mpn":	"0603WAF9001T5E",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"resistance":	9000,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}]
+	}
+}

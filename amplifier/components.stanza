@@ -1,0 +1,31 @@
+; ====================
+; A number of helpful functions to check your designs, export to CAD,
+; update your design in CAD, etc.
+; ====================
+#use-added-syntax(jitx)
+defpackage components :
+  import core
+  import jitx
+  import jitx/commands
+  import ocdb/utils/generic-components
+
+public pcb-module electret-mic :
+  pin vdd
+  pin gnd
+  inst mic : components/INGHAi/GMI4522P-2C-62db/component
+  net (vdd mic.p[1])
+  net (gnd mic.p[2])
+  
+public pcb-module op-amp :
+  pin v+
+  pin v-
+  pin out
+  pin vdd
+  pin gnd
+
+  inst opa : components/Texas-Instruments/OPA172IDCKR/component
+  net (opa.VDD vdd)
+  net (opa.VIN+ v+)
+  net (opa.VIN- v-)
+  net (opa.VSS gnd)
+  net (opa.VOUT out)

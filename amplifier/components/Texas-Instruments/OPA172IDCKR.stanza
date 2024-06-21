@@ -1,0 +1,123 @@
+; This file is generated based on the parts database query below:")
+;   database-part(["manufacturer" => "Texas Instruments", "mpn" => "OPA172IDCKR"])
+#use-added-syntax(jitx)
+defpackage components/Texas-Instruments/OPA172IDCKR :
+  import core
+  import jitx
+  import jitx/commands
+  import ocdb/utils/box-symbol
+
+
+pcb-pad rectangle-smd-pad :
+  name = "rectangle-smd-pad"
+  type = SMD
+  shape = Rectangle(0.315, 0.835)
+  layer(SolderMask(Top)) = Rectangle(0.417, 0.937)
+  layer(Paste(Top)) = Rectangle(0.417, 0.937)
+
+pcb-landpattern lp :
+  pad p[1] : rectangle-smd-pad at loc(-0.650, -0.843) on Top
+  pad p[2] : rectangle-smd-pad at loc(-0.000499999999988177, -0.843) on Top
+  pad p[3] : rectangle-smd-pad at loc(0.649, -0.843) on Top
+  pad p[4] : rectangle-smd-pad at loc(0.649, 0.842) on Top
+  pad p[5] : rectangle-smd-pad at loc(-0.650, 0.842) on Top
+
+  layer(Silkscreen("F-SilkS", Top)) = Text(">REF", 0.5, W, loc(-0.750, 3.017))
+  layer(CustomLayer("Fab", Top)) = Text(">VALUE", 0.5, W, loc(-0.750, 2.017))
+  layer(Silkscreen("F-SilkS", Top)) = Line(0.152, [Point(1.077, -0.702), Point(1.077, 0.702)])
+  layer(Silkscreen("F-SilkS", Top)) = Line(0.152, [Point(-1.077, -0.702), Point(-1.077, 0.702)])
+  layer(Silkscreen("F-SilkS", Top)) = Line(0.152, [Point(0.264, 0.702), Point(-0.264, 0.702)])
+  layer(CustomLayer("Fab", Top)) = Polyline(0.060, [
+    Arc(-1.000, -1.050, 0.030, 0.0, -360.000)])
+  layer(CustomLayer("Fab", Top)) = Polyline(0.200, [
+    Arc(-0.650, -1.341, 0.100, 0.0, -360.000)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.300, [
+    Arc(-1.260, -0.995, 0.150, 0.0, -360.000)])
+  layer(Courtyard(Top)) = Rectangle(2.305, 2.622)
+
+  model3d = Model3D("../../3d-models/jitx-64d1f46cb789d8dc4b8ea80b.stp",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    [],
+    )
+
+pcb-symbol sym-OPA172IDCKR :
+  pin VDD at Point(0.0, 5.080) with :
+    direction = Up
+    length = 5.080
+    ; number-size = 1.000
+    ; name-size = 1.000
+  pin VIN+ at Point(-5.080, -2.540) with :
+    direction = Left
+    length = 5.080
+    ; number-size = 1.000
+    ; name-size = 1.000
+  pin VIN- at Point(-5.080, 2.540) with :
+    direction = Left
+    length = 5.080
+    ; number-size = 1.000
+    ; name-size = 1.000
+  pin VSS at Point(0.0, -5.080) with :
+    direction = Down
+    length = 5.080
+    ; number-size = 1.000
+    ; name-size = 1.000
+  pin VOUT at Point(5.080, 0.0) with :
+    direction = Right
+    length = 5.080
+    ; number-size = 1.000
+    ; name-size = 1.000
+
+  layer("value") = Text(">VALUE", 0.7056, W, loc(-5.080, 6.080))
+  layer("reference") = Text(">REF", 0.7056, W, loc(-5.080, 7.080))
+  layer("foreground") = Polyline(0.254, [
+    Point(-5.080, -5.080)
+    Point(5.080, 0.0)
+    Point(-5.080, 5.080)
+    Point(-5.080, -5.080)])
+  layer("foreground") = Polyline(0.254, [
+    Point(-4.064, 2.540)
+    Point(-2.540, 2.540)])
+  layer("foreground") = Polyline(0.254, [
+    Point(-4.064, -2.540)
+    Point(-2.540, -2.540)])
+  layer("foreground") = Polyline(0.254, [
+    Point(-3.302, -1.778)
+    Point(-3.302, -3.302)])
+  layer("foreground") = Polyline(0.254, [
+    Point(0.0, 5.080)
+    Point(0.0, 2.540)])
+  layer("foreground") = Polyline(0.254, [
+    Point(0.0, -2.540)
+    Point(0.0, -5.080)])
+
+public pcb-component component :
+  name = "C84622"
+  description = "8pA 1 10MHz 轨到轨 SC-70-5  Operational Amplifier ROHS"
+  manufacturer = "Texas Instruments"
+  mpn = "OPA172IDCKR"
+  datasheet = "https://datasheet.lcsc.com/lcsc/1809051821_Texas-Instruments-OPA172IDCKR_C84622.pdf"
+  reference-prefix = "U"
+  pin-properties :
+    [pin:Ref | pads:Ref ... | side:Dir | electrical-type:String | bank:Int]
+    [VDD | p[5] | Up | "power_in" | 0]
+    [VIN+ | p[1] | Left | "unspecified" | 0]
+    [VIN- | p[3] | Left | "unspecified" | 0]
+    [VSS | p[2] | Down | "power_in" | 0]
+    [VOUT | p[4] | Right | "output" | 0]
+
+  assign-landpattern(lp)
+  assign-symbol(sym-OPA172IDCKR)
+
+  property(self.category) = "ic"
+  property(self.manufacturer_aliases) = ["Texas Instruments"]
+  property(self.mpn_aliases) = ["OPA172IDCKR"]
+  property(self.cofactr_id) = "ICIIB26OZZOG"
+  property(self.reference_prefix) = "U"
+  property(self.trust) = "low"
+  property(self.x) = 2.305
+  property(self.y) = 2.622
+  property(self.area) = 6.044
+  property(self.case) = "SC-70-5"
+

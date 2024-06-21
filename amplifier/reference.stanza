@@ -1,0 +1,65 @@
+#use-added-syntax(jitx)
+defpackage reference :
+  import core
+  import jitx
+  import jitx/commands
+
+  import ocdb/utils/generic-components
+  import components
+
+; A quick implementation of the reference circuit from https://www.ti.com/lit/ug/tidu765/tidu765.pdf?ts=1718156372918
+
+public pcb-module microphone :
+  pin vdd
+  pin gnd
+  pin out
+
+  inst mic : electret-mic 
+  inst rbias : chip-resistor(2200.0) 
+  inst c1 : ceramic-cap(1.0e-6) ; Decoupling cap, assuming 1uF 
+  net (vdd rbias.p[1]) 
+  net (rbias.p[2] mic.vdd c1.p[1]) 
+  net (gnd mic.gnd)
+  net HUMAN-MIC-IN (out c1.p[2])
+
+public pcb-module transimpedance-amplifier :
+  pin vdd
+  pin gnd
+  pin in
+  pin out
+
+  inst amp : op-amp 
+  net (in amp.v-)
+  net (vdd amp.vdd)
+  net (gnd amp.gnd)
+  net (out amp.out)
+  res-strap(amp.v-, amp.out, 75.0e3)
+  cap-strap(amp.v-, amp.out, 10.0e-9)
+  
+  res-strap(vdd, amp.v+, 100.0e3)
+  res-strap(gnd, amp.v+, 100.0e3)
+  cap-strap(gnd, amp.v+, 2.2e-6)
+
+public pcb-module low-pass-filter :
+  pin gnd
+  pin in
+  pin out
+
+  inst rout : chip-resistor(49.9)
+  net (rout.p[1] in)
+  cap-strap(rout.p[2], out, 2.2e-6)
+  res-strap(out, gnd, 100.0e3)
+
+public pcb-module pre-amplifier :
+  inst mic : microphone
+  inst amp : transimpedance-amplifier
+  inst filter : low-pass-filter
+  net (mic.out amp.in)
+  net (amp.out filter.in)
+  net HUMAN-MIC-OUT (filter.out)
+  net VDD (mic.vdd amp.vdd)
+  net GND (mic.gnd amp.gnd filter.gnd)
+
+  symbol(GND) = ocdb/utils/symbols/ground-sym
+  symbol(VDD) = ocdb/utils/symbols/supply-sym
+  

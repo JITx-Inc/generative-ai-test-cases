@@ -138,9 +138,9 @@ public pcb-component component :
   val grid = Grid-Numbering(rows, cols)
 
   val missing-pads = ["A[4]", "A[6]", "A[8]", "A[10]", "B[3]", "C[1]", "C[3]", "C[12]", 
-                      "D[3]", "D[4]", "D[5]", "D[6]", "D[7]", "D[8]", "D[9]", "E[1]", "E[9]", "E[12]",
-                      "F[4]", "F[9]", "G[1]", "G[4]", "G[9]", "G[12]", 
-                      "H[4]", "H[5]", "H[6]", "H[7]", "H[8]", "H[9]",
+                      "D[3]", "D[4]", "D[5]", "D[6]",  "D[7]", "D[8]", "D[9]", "E[1]", "E[9]", "E[12]",
+                      "F[4]", "F[9]", "G[1]", "G[4]",  "G[9]", "G[12]", 
+                      "H[4]", "H[5]", "H[6]", "H[7]",  "H[8]", "H[9]",
                       "J[1]", "J[12]", "L[2]", "L[4]", "L[6]", "L[8]", "L[10]"]
 
   val missing = to-tuple $ for s in missing-pads seq:
@@ -175,7 +175,6 @@ public pcb-component component :
     pad-planner = planner,
     density-level = DensityLevelB
   )
-
 
   val lp = create-landpattern(pkg)
   assign-landpattern(lp)

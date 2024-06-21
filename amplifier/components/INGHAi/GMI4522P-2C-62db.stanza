@@ -1,0 +1,109 @@
+; This file is generated based on the parts database query below:")
+;   database-part(["manufacturer" => "INGHAi", "mpn" => "GMI4522P-2C-62db"])
+#use-added-syntax(jitx)
+defpackage components/INGHAi/GMI4522P-2C-62db :
+  import core
+  import jitx
+  import jitx/commands
+  import ocdb/utils/box-symbol
+
+
+pcb-pad circle-th-pad :
+  name = "circle-th-pad"
+  type = TH
+  shape = Circle(0.550)
+  layer(SolderMask(Top)) = Circle(0.601)
+  layer(SolderMask(Bottom)) = Circle(0.601)
+  layer(Cutout()) = Circle(0.350)
+
+pcb-pad rectangle-th-pad :
+  name = "rectangle-th-pad"
+  type = TH
+  shape = Rectangle(1.100, 1.100)
+  layer(SolderMask(Top)) = Rectangle(1.202, 1.202)
+  layer(SolderMask(Bottom)) = Rectangle(1.202, 1.202)
+  layer(Cutout()) = Circle(0.350)
+
+pcb-landpattern lp :
+  pad p[1] : rectangle-th-pad at loc(-0.739, -0.736, 270.000) on Top
+  pad p[2] : circle-th-pad at loc(0.861, -0.736) on Top
+
+  layer(Silkscreen("F-SilkS", Top)) = Text(">REF", 0.5, W, loc(-0.750, 3.043))
+  layer(CustomLayer("Fab", Top)) = Text(">VALUE", 0.5, W, loc(-0.750, 2.043))
+  layer(Silkscreen("F-SilkS", Top)) = Line(0.254, [Point(0.950, 1.084), Point(0.950, 0.067)])
+  layer(Silkscreen("F-SilkS", Top)) = Line(0.254, [Point(-0.827, 1.211), Point(-0.827, 0.153)])
+  layer(Silkscreen("F-SilkS", Top)) = Line(0.254, [Point(-0.320, 0.660), Point(-1.336, 0.660)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.254, [
+    Arc(0.061, -0.186, 2.250, 0.0, -360.000)])
+  layer(CustomLayer("Fab", Top)) = Polyline(0.060, [
+    Arc(-2.316, -2.563, 0.030, 0.0, -360.000)])
+  layer(Courtyard(Top)) = Rectangle(2.925, 2.675)
+
+  model3d = Model3D("../../3d-models/jitx-64d19736b789d8dc4b846b30.stp",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    [],
+    )
+
+pcb-symbol sym-GMI4522P-2C-62DB :
+  pin p[1] at Point(-2.540, -2.540) with :
+    direction = Down
+    length = 2.540
+    ; number-size = 1.753
+    ; name-size = 1.753
+  pin p[2] at Point(2.540, -2.540) with :
+    direction = Down
+    length = 2.540
+    ; number-size = 1.753
+    ; name-size = 1.753
+
+  layer("value") = Text(">VALUE", 0.7056, W, loc(-6.620, 8.620, -90.0))
+  layer("reference") = Text(">REF", 0.7056, W, loc(-7.620, 8.620, -90.0))
+  layer("foreground") = Polyline(0.254, [
+    Point(2.540, -1.778)
+    Point(2.540, -2.540)])
+  layer("foreground") = Polyline(0.254, [
+    Point(-2.540, -1.778)
+    Point(-2.540, -2.540)])
+  layer("foreground") = Polyline(0.254, [
+    Point(5.080, 2.540)
+    Point(-5.080, 2.540)])
+  layer("foreground") = Polyline(0.254, [
+    Point(-2.540, -1.016)
+    Point(-2.540, 0.508)])
+  layer("foreground") = Polyline(0.254, [
+    Point(-3.302, -0.254)
+    Point(-1.778, -0.254)])
+  layer("foreground") = Polyline(0.254, [
+    Point(2.540, -1.016)
+    Point(2.540, 0.508)])
+  layer("foreground") = Polyline(0.254, [
+    Arc(0.0, 2.540, 5.080, 180.000, -180.000)])
+
+public pcb-component component :
+  name = "C233321"
+  description = " Plugin,D=4.5mm  Microphones ROHS"
+  manufacturer = "INGHAi"
+  mpn = "GMI4522P-2C-62db"
+  datasheet = "https://datasheet.lcsc.com/lcsc/2001132232_INGHAi-GMI4522P-2C-62db_C233321.pdf"
+  reference-prefix = "U"
+  pin-properties :
+    [pin:Ref | pads:Ref ... | side:Dir | electrical-type:String | bank:Int]
+    [p[1] | p[1] | Down | "unspecified" | 0]
+    [p[2] | p[2] | Down | "unspecified" | 0]
+
+  assign-landpattern(lp)
+  assign-symbol(sym-GMI4522P-2C-62DB)
+
+  property(self.category) = "ic"
+  property(self.manufacturer_aliases) = ["INGHAi"]
+  property(self.mpn_aliases) = ["GMI4522P-2C-62db"]
+  property(self.cofactr_id) = "AMHMU0KK0W8T"
+  property(self.reference_prefix) = "U"
+  property(self.trust) = "low"
+  property(self.x) = 2.925
+  property(self.y) = 2.675
+  property(self.area) = 7.824
+  property(self.case) = "Plugin,D=4.5mm"
+
